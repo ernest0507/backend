@@ -17,5 +17,5 @@ const resetPassword = require('./routes/ResetPassword')
 app.use('/reset', resetPassword)
 
 db.sequelize.sync().then(() => {
-    app.listen("8800", '0.0.0.0', () => console.log("Server start on 8880"));
+    app.listen("8800", () => console.log("Server start on 8880"));
 });
